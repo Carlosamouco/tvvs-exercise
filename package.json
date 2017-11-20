@@ -1,0 +1,15 @@
+{
+  "name": "tvvs",
+  "version": "1.0.0",
+  "description": "tic tac toe",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "TVVS",
+  "license": "ISC",
+  "dependencies": {
+    "js-base64": "^2.3.2",
+    "mocha": "^4.0.1",
+    "request": "^2.83.0"
+  }
+}
