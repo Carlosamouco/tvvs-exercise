@@ -1,18 +1,9 @@
 var request = require('request');
 var Base64 = require('js-base64').Base64;
 
-const DEVELOPER_EMAIL = "rafavieira.93@gmail.com";
-const API_TOKEN = "1711b8261ce01c4c82d0f9587360a9f9950174c2";
-const PROJECT_ID = "7268";
-
-var json = {
-  "data": { 
-    "attributes": { 
-        "instance-id" : "7539908", 
-        "exit-code" : "1" 
-    } 
-  }   
-};
+const DEVELOPER_EMAIL = "YOUR EMAIL";
+const API_TOKEN = "YOUR API TOKEN";
+const PROJECT_ID = "YOUR PROJECT ID";
 
 function postData(json) {
   var options = {
