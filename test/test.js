@@ -24,7 +24,7 @@ function commitTests(tests) {
   }
 }
 
-describe('Be able to to play start a new game', () => {
+describe('Be able to start a new game', () => {
   describe('#ResetBoard()', () => {
 
     let tests = [];
