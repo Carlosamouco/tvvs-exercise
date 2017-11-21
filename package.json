@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "tic tac toe",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "./node_modules/.bin/http-server . -c-1"
   },
   "author": "TVVS",
   "license": "ISC",
   "dependencies": {
+    "http-server": "^0.10.0",
     "js-base64": "^2.3.2",
     "mocha": "^4.0.1",
     "request": "^2.83.0"

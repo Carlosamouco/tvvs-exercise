@@ -10,20 +10,20 @@ function OnLoad(){
   
   function OnResize(){
     SetCanvasSize();
-    Draw();
+    Drawer.Draw(board);
   }
   
   function OnMouseMove(e){
-    if (playerTurn === 0){
+    if ((board.playerTurn === PLAYER || board.playerTurn === CPU) && board.gameStatus.winner == null){
       CheckMousePos(e.clientX, e.clientY);
     }
   }
   
   function OnMouseDown(e){
-    if (gameStatus.winner !== null){
+    if (board.gameStatus.winner !== null){
       Init();
     }
-    else if (playerTurn === 0){
+    else if (board.playerTurn === PLAYER || board.playerTurn === CPU){
       CheckMousePos(e.clientX, e.clientY, true);
     }
   }
